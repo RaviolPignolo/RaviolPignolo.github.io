@@ -1,0 +1,57 @@
+/* Estética para el bloque de ítems */
+.items-block {
+    background: #23234a;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 32px auto 0 auto;
+    width: 720px;
+    box-shadow: 0 2px 8px #0004;
+    color: #f0f0f0;
+}
+.items-icons-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+.item-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: #35357a;
+    box-shadow: 0 1px 4px #0003;
+    cursor: grab;
+    transition: box-shadow 0.2s;
+}
+.item-icon:active {
+    box-shadow: 0 2px 8px #4e4ecf;
+}
+.item-slots {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+.item-slot {
+    width: 48px;
+    height: 48px;
+    background: #35357a;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px #0003;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+body { font-family: Arial, sans-serif; background: #181828; color: #f0f0f0; margin: 0; padding: 0; }
+.container { display: flex; justify-content: center; align-items: flex-start; gap: 32px; padding: 32px; }
+.champion-block { background: #23234a; border-radius: 12px; padding: 24px; width: 340px; box-shadow: 0 2px 8px #0004; }
+.champion-block h2 { margin-top: 0; }
+.actions-block { background: #23234a; border-radius: 12px; padding: 24px; margin: 32px auto 0 auto; width: 720px; box-shadow: 0 2px 8px #0004; }
+label, select, input { display: block; margin-bottom: 8px; }
+.items-list, .skills-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.item, .skill { background: #35357a; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+.item.selected, .skill.selected { background: #4e4ecf; }
+.stats { margin-bottom: 12px; }
+.skills-list { margin-bottom: 12px; }
+.description { font-size: 0.95em; color: #b0b0ff; margin-bottom: 8px; }

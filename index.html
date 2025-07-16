@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Daño - League of Legends</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <h1 style="text-align:center; margin-top:24px;">Calculadora de Daño - League of Legends</h1>
+    <div class="container">
+        <!-- Bloque Izquierdo: Atacante -->
+        <div class="champion-block" id="attacker-block">
+            <h2>Atacante</h2>
+            <label>Campeón:
+                <select id="attacker-champion"></select>
+            </label>
+            <label>Nivel:
+                <input type="number" id="attacker-level" min="1" max="18" value="1">
+            </label>
+            <div class="stats" id="attacker-stats"></div>
+            <div>
+                <strong>Ítems:</strong>
+                <div class="item-slots" id="attacker-item-slots">
+                    <div class="item-slot" data-slot="0"></div>
+                    <div class="item-slot" data-slot="1"></div>
+                    <div class="item-slot" data-slot="2"></div>
+                    <div class="item-slot" data-slot="3"></div>
+                    <div class="item-slot" data-slot="4"></div>
+                    <div class="item-slot" data-slot="5"></div>
+                </div>
+            </div>
+            <div>
+                <strong>Habilidades:</strong>
+                <div class="skills-list" id="attacker-skills"></div>
+                <div class="description" id="attacker-skill-desc"></div>
+            </div>
+        </div>
+        <!-- Bloque Derecho: Defensor -->
+        <div class="champion-block" id="defender-block">
+            <h2>Defensor</h2>
+            <label>Campeón:
+                <select id="defender-champion"></select>
+            </label>
+            <label>Nivel:
+                <input type="number" id="defender-level" min="1" max="18" value="1">
+            </label>
+            <div class="stats" id="defender-stats"></div>
+            <div>
+                <strong>Ítems:</strong>
+                <div class="item-slots" id="defender-item-slots">
+                    <div class="item-slot" data-slot="0"></div>
+                    <div class="item-slot" data-slot="1"></div>
+                    <div class="item-slot" data-slot="2"></div>
+                    <div class="item-slot" data-slot="3"></div>
+                    <div class="item-slot" data-slot="4"></div>
+                    <div class="item-slot" data-slot="5"></div>
+                </div>
+            </div>
+            <div>
+                <strong>Habilidades:</strong>
+                <div class="skills-list" id="defender-skills"></div>
+                <div class="description" id="defender-skill-desc"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Bloque expandible de ítems debajo de los campeones -->
+    <div id="items-block" class="items-block">
+        <button id="toggle-items" style="width:100%;margin-bottom:8px;">Mostrar/Ocultar Ítems</button>
+        <div id="items-icons" style="display:none;">
+            <!-- Aquí se mostrarán los iconos de los ítems -->
+            <div class="items-icons-list">
+                <img src="assets/items/BlackfireTorch_item.png" alt="BlackfireTorch" class="item-icon" draggable="true" data-item="BlackfireTorch">
+                <img src="assets/items/Bloodthirster_item.png" alt="Bloodthirster" class="item-icon" draggable="true" data-item="Bloodthirster">
+                <img src="assets/items/Thornmail_item.png" alt="Thornmail" class="item-icon" draggable="true" data-item="Thornmail">
+                <img src="assets/items/SpiritVisage_item.png" alt="Spirit Visage" class="item-icon" draggable="true" data-item="Spirit Visage">
+                <!-- Agrega más ítems aquí -->
+            </div>
+        </div>
+    </div>
+    <!-- Sección de Secuencia de Acciones -->
+    <div class="actions-block">
+        <h2>Secuencia de acciones</h2>
+        <div id="actions-sequence">
+            <!-- Aquí se podrán elegir y ordenar las acciones a simular -->
+        </div>
+        <button id="calculate-btn">Calcular Daño</button>
+        <div id="result" style="margin-top:16px;"></div>
+    </div>
+    <script>
+        // Aquí irá la lógica JS para poblar campeones, ítems, habilidades, etc.
+    </script>
+</body>
+</html>
