@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'LoL-Font';
+    src: url('assets/font/BeaufortforLOL-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
 /* Estética para el bloque de ítems */
 .items-block {
     background: #23234a;
@@ -43,9 +50,9 @@
     justify-content: center;
     cursor: pointer;
 }
-body { font-family: Arial, sans-serif; background: #181828; color: #f0f0f0; margin: 0; padding: 0; }
+body { font-family: 'LoL-Font', Arial, sans-serif; background: #181828; color: #f0f0f0; margin: 0; padding: 0; }
 .container { display: flex; justify-content: center; align-items: flex-start; gap: 32px; padding: 32px; }
-.champion-block { background: #23234a; border-radius: 12px; padding: 24px; width: 340px; box-shadow: 0 2px 8px #0004; }
+.champion-block { background: #23234a; border-radius: 12px; padding: 24px; width: 420px; box-shadow: 0 2px 8px #0004; }
 .champion-block h2 { margin-top: 0; }
 .actions-block { background: #23234a; border-radius: 12px; padding: 24px; margin: 32px auto 0 auto; width: 720px; box-shadow: 0 2px 8px #0004; }
 label, select, input { display: block; margin-bottom: 8px; }
@@ -53,5 +60,22 @@ label, select, input { display: block; margin-bottom: 8px; }
 .item, .skill { background: #35357a; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
 .item.selected, .skill.selected { background: #4e4ecf; }
 .stats { margin-bottom: 12px; }
-.skills-list { margin-bottom: 12px; }
+.skills-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+}
 .description { font-size: 0.95em; color: #b0b0ff; margin-bottom: 8px; }
+.skill-desc-block {
+    background: #23234a;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0004;
+    color: #e0f6ff;
+    padding: 16px;
+    margin: 12px 0 0 0;
+    font-size: 1.05em;
+    width: 100%;
+    box-sizing: border-box;
+}

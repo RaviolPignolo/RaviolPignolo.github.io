@@ -52,6 +52,7 @@ function updateChampion(side) {
     items[side] = Array(6).fill(null);
     updateChampionItems(side);
     renderStats(side);
+    renderSkills(side);
 }
 
 function updateChampionItems(side) {
@@ -107,14 +108,11 @@ levelInputs.forEach((input, side) => {
         }
         updateChampionItems(side);
         renderStats(side);
+        renderSkills(side);
     });
 });
 
 // Inicialización
-
-renderChampionOptions();
-updateChampion(0);
-updateChampion(1);
 
 // Drag & Drop de ítems
 function setupDragAndDrop() {
@@ -177,5 +175,75 @@ document.getElementById('toggle-items').addEventListener('click', () => {
 
 // Inicializar drag & drop después de cargar el DOM
 window.addEventListener('DOMContentLoaded', () => {
+    renderChampionOptions();
+    updateChampion(0);
+    updateChampion(1);
+    renderSkills(0);
+    renderSkills(1);
     setupDragAndDrop();
 });
+
+function renderSkills(side) {
+    const skillsDiv = document.getElementById(side === 0 ? 'attacker-skills' : 'defender-skills');
+    const descDiv = document.getElementById(side === 0 ? 'attacker-skill-desc' : 'defender-skill-desc');
+    skillsDiv.innerHTML = '';
+    descDiv.innerHTML = '';
+    if (!champions[side]) return;
+    const champ = champions[side];
+    const skillKeys = [
+        { key: 'P' },
+        { key: 'Q' },
+        { key: 'W' },
+        { key: 'E' },
+        { key: 'R' }
+    ];
+    skillKeys.forEach(({ key }) => {
+        // Normalizar nombre del campeón para la ruta
+        const champFolder = champ.name.replace(/\s/g, '').replace(/'/g, '').replace(/[^a-zA-Z0-9]/g, '');
+        const imgName = `${champFolder}_${key}_ability.png`;
+        const imgPath = `assets/champions/${champFolder}/${imgName}`;
+        // Crear elemento de habilidad
+        const skillElem = document.createElement('div');
+        skillElem.className = 'skill';
+        skillElem.innerHTML = `<img src="${imgPath}" alt="${key}" style="width:40px;height:40px;vertical-align:middle;border-radius:8px;">`;
+        // Click: mostrar/cerrar descripción
+        skillElem.addEventListener('click', () => {
+            // Si ya está abierta esta descripción, ciérrala
+            if (descDiv.getAttribute('data-open') === key) {
+                descDiv.innerHTML = '';
+                descDiv.removeAttribute('data-open');
+            } else {
+                descDiv.innerHTML = `<div class='skill-desc-block'><strong>${champ.name} ${key}</strong><br>${getSkillDescription(champ, key)}</div>`;
+                descDiv.setAttribute('data-open', key);
+            }
+        });
+        // Doble click: agregar a secuencia de acciones
+        skillElem.addEventListener('dblclick', () => {
+            addActionToSequence(champ.name, key);
+        });
+        skillsDiv.appendChild(skillElem);
+    });
+}
+
+function getSkillDescription(champ, key) {
+    // Puedes personalizar esto por campeón y habilidad
+    if (champ.name === 'Karthus') {
+        switch (key) {
+            case 'P': return `<span style='color:#b0eaff;'>Desafía la muerte y lanza habilidades durante 7 segundos tras morir. <br> No puede moverse ni usar básicos, pero es inmune a control de masas y daño.</span>`;
+            case 'Q': return `<span style='color:#b0eaff;'>Inflige daño mágico en área.</span>`;
+            case 'W': return `<span style='color:#b0eaff;'>Reduce la resistencia mágica de los enemigos.</span>`;
+            case 'E': return `<span style='color:#b0eaff;'>Daño mágico por segundo en área.</span>`;
+            case 'R': return `<span style='color:#b0eaff;'>Daño global a todos los enemigos.</span>`;
+        }
+    }
+    if (champ.name === 'Twitch') {
+        switch (key) {
+            case 'P': return `<span style='color:#b0eaff;'>Aplica veneno a los enemigos.</span>`;
+            case 'Q': return `<span style='color:#b0eaff;'>Camuflaje y velocidad de ataque.</span>`;
+            case 'W': return `<span style='color:#b0eaff;'>Lanza una nube de veneno.</span>`;
+            case 'E': return `<span style='color:#b0eaff;'>Daño adicional según acumulación de veneno.</span>`;
+            case 'R': return `<span style='color:#b0eaff;'>Aumenta el alcance y daño de los ataques.</span>`;
+        }
+    }
+    return '<span style="color:#b0eaff;">Descripción no disponible.</span>';
+}
