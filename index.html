@@ -69,13 +69,78 @@
     <div id="items-block" class="items-block">
         <button id="toggle-items" style="width:100%;margin-bottom:8px;">Mostrar/Ocultar Ítems</button>
         <div id="items-icons" style="display:none;">
-            <!-- Aquí se mostrarán los iconos de los ítems -->
-            <div class="items-icons-list">
-                <img src="assets/items/BlackfireTorch_item.png" alt="BlackfireTorch" class="item-icon" draggable="true" data-item="BlackfireTorch">
-                <img src="assets/items/Bloodthirster_item.png" alt="Bloodthirster" class="item-icon" draggable="true" data-item="Bloodthirster">
+            <div id="items-category-menu" class="items-category-menu">
+                <button class="category-btn" data-category="all">Todos</button>
+                <button class="category-btn" data-category="fighter">Luchador</button>
+                <button class="category-btn" data-category="marksmen">Tirador</button>
+                <button class="category-btn" data-category="assasin">Asesino</button>
+                <button class="category-btn" data-category="mage">Mago</button>
+                <button class="category-btn" data-category="tank">Tanque</button>
+                <button class="category-btn" data-category="support">Soporte</button>
+                <button class="category-btn" data-category="boots">Botas</button>
+            </div>
+            <div class="items-icons-list" id="items-icons-list">
+                <!-- Ítems se renderizan dinámicamente aquí -->
+            </div>
+                <img src="assets/items/LudensCompanion_item.png" alt="LudensCompanion" class="item-icon" draggable="true" data-item="LudensCompanion">
+                <img src="assets/items/Malignance_item.png" alt="Malignance" class="item-icon" draggable="true" data-item="Malignance">
+                <img src="assets/items/Manamune_item.png" alt="Manamune" class="item-icon" draggable="true" data-item="Manamune">
+                <img src="assets/items/MawOfMalmortius_item.png" alt="MawOfMalmortius" class="item-icon" draggable="true" data-item="MawOfMalmortius">
+                <img src="assets/items/MejaisSoulstealer_item.png" alt="MejaisSoulstealer" class="item-icon" draggable="true" data-item="MejaisSoulstealer">
+                <img src="assets/items/MercurialScimitar_item.png" alt="MercurialScimitar" class="item-icon" draggable="true" data-item="MercurialScimitar">
+                <img src="assets/items/MercurysTreads_item.png" alt="MercurysTreads" class="item-icon" draggable="true" data-item="MercurysTreads">
+                <img src="assets/items/MikaelsBlessing_item.png" alt="MikaelsBlessing" class="item-icon" draggable="true" data-item="MikaelsBlessing">
+                <img src="assets/items/MoonstoneRenewer_item.png" alt="MoonstoneRenewer" class="item-icon" draggable="true" data-item="MoonstoneRenewer">
+                <img src="assets/items/Morellonomicon_item.png" alt="Morellonomicon" class="item-icon" draggable="true" data-item="Morellonomicon">
+                <img src="assets/items/MortalReminder_item.png" alt="MortalReminder" class="item-icon" draggable="true" data-item="MortalReminder">
+                <img src="assets/items/Muramana_item.png" alt="Muramana" class="item-icon" draggable="true" data-item="Muramana">
+                <img src="assets/items/NashorsTooth_item.png" alt="NashorsTooth" class="item-icon" draggable="true" data-item="NashorsTooth">
+                <img src="assets/items/NavoriFlickerblade_item.png" alt="NavoriFlickerblade" class="item-icon" draggable="true" data-item="NavoriFlickerblade">
+                <img src="assets/items/Opportunity_item.png" alt="Opportunity" class="item-icon" draggable="true" data-item="Opportunity">
+                <img src="assets/items/OverlordsBloodmail_item.png" alt="OverlordsBloodmail" class="item-icon" draggable="true" data-item="OverlordsBloodmail">
+                <img src="assets/items/PhantomDancer_item.png" alt="PhantomDancer" class="item-icon" draggable="true" data-item="PhantomDancer">
+                <img src="assets/items/PlatedSteelcaps_item.png" alt="PlatedSteelcaps" class="item-icon" draggable="true" data-item="PlatedSteelcaps">
+                <img src="assets/items/ProfaneHydra_item.png" alt="ProfaneHydra" class="item-icon" draggable="true" data-item="ProfaneHydra">
+                <img src="assets/items/RabadonsDeathcap_item.png" alt="RabadonsDeathcap" class="item-icon" draggable="true" data-item="RabadonsDeathcap">
+                <img src="assets/items/RanduinsOmen_item.png" alt="RanduinsOmen" class="item-icon" draggable="true" data-item="RanduinsOmen">
+                <img src="assets/items/RapidFirecannon_item.png" alt="RapidFirecannon" class="item-icon" draggable="true" data-item="RapidFirecannon">
+                <img src="assets/items/RavenousHydra_item.png" alt="RavenousHydra" class="item-icon" draggable="true" data-item="RavenousHydra">
+                <img src="assets/items/Redemption_item.png" alt="Redemption" class="item-icon" draggable="true" data-item="Redemption">
+                <img src="assets/items/Riftmaker_item.png" alt="Riftmaker" class="item-icon" draggable="true" data-item="Riftmaker">
+                <img src="assets/items/RodOfAges_item.png" alt="RodOfAges" class="item-icon" draggable="true" data-item="RodOfAges">
+                <img src="assets/items/RunaansHurricane_item.png" alt="RunaansHurricane" class="item-icon" draggable="true" data-item="RunaansHurricane">
+                <img src="assets/items/RylaisCrystalScepter_item.png" alt="RylaisCrystalScepter" class="item-icon" draggable="true" data-item="RylaisCrystalScepter">
+                <img src="assets/items/SeraphsEmbrace_item.png" alt="SeraphsEmbrace" class="item-icon" draggable="true" data-item="SeraphsEmbrace">
+                <img src="assets/items/SerpentsFang_item.png" alt="SerpentsFang" class="item-icon" draggable="true" data-item="SerpentsFang">
+                <img src="assets/items/SeryldasGrudge_item.png" alt="SeryldasGrudge" class="item-icon" draggable="true" data-item="SeryldasGrudge">
+                <img src="assets/items/Shadowflame_item.png" alt="Shadowflame" class="item-icon" draggable="true" data-item="Shadowflame">
+                <img src="assets/items/ShurelyasBattlesong_item.png" alt="ShurelyasBattlesong" class="item-icon" draggable="true" data-item="ShurelyasBattlesong">
+                <img src="assets/items/SorcerersShoes_item.png" alt="SorcerersShoes" class="item-icon" draggable="true" data-item="SorcerersShoes">
+                <img src="assets/items/SpearOfShojin_item.png" alt="SpearOfShojin" class="item-icon" draggable="true" data-item="SpearOfShojin">
+                <img src="assets/items/SpiritVisage_item.png" alt="SpiritVisage" class="item-icon" draggable="true" data-item="SpiritVisage">
+                <img src="assets/items/StaffOfFlowingWater_item.png" alt="StaffOfFlowingWater" class="item-icon" draggable="true" data-item="StaffOfFlowingWater">
+                <img src="assets/items/StatikkShiv_item.png" alt="StatikkShiv" class="item-icon" draggable="true" data-item="StatikkShiv">
+                <img src="assets/items/SteraksGage_item.png" alt="SteraksGage" class="item-icon" draggable="true" data-item="SteraksGage">
+                <img src="assets/items/Stormsurge_item.png" alt="Stormsurge" class="item-icon" draggable="true" data-item="Stormsurge">
+                <img src="assets/items/Stridebreaker_item.png" alt="Stridebreaker" class="item-icon" draggable="true" data-item="Stridebreaker">
+                <img src="assets/items/SunderedSky_item.png" alt="SunderedSky" class="item-icon" draggable="true" data-item="SunderedSky">
+                <img src="assets/items/SunfireAegis_item.png" alt="SunfireAegis" class="item-icon" draggable="true" data-item="SunfireAegis">
+                <img src="assets/items/Terminus_item.png" alt="Terminus" class="item-icon" draggable="true" data-item="Terminus">
+                <img src="assets/items/TheCollector_item.png" alt="TheCollector" class="item-icon" draggable="true" data-item="TheCollector">
                 <img src="assets/items/Thornmail_item.png" alt="Thornmail" class="item-icon" draggable="true" data-item="Thornmail">
-                <img src="assets/items/SpiritVisage_item.png" alt="Spirit Visage" class="item-icon" draggable="true" data-item="Spirit Visage">
-                <!-- Agrega más ítems aquí -->
+                <img src="assets/items/TitanicHydra_item.png" alt="TitanicHydra" class="item-icon" draggable="true" data-item="TitanicHydra">
+                <img src="assets/items/Trailblazer_item.png" alt="Trailblazer" class="item-icon" draggable="true" data-item="Trailblazer">
+                <img src="assets/items/TrinityForce_item.png" alt="TrinityForce" class="item-icon" draggable="true" data-item="TrinityForce">
+                <img src="assets/items/UmbralGlaive_item.png" alt="UmbralGlaive" class="item-icon" draggable="true" data-item="UmbralGlaive">
+                <img src="assets/items/UnendingDespair_item.png" alt="UnendingDespair" class="item-icon" draggable="true" data-item="UnendingDespair">
+                <img src="assets/items/VoidStaff_item.png" alt="VoidStaff" class="item-icon" draggable="true" data-item="VoidStaff">
+                <img src="assets/items/VoltaicCyclosword_item.png" alt="VoltaicCyclosword" class="item-icon" draggable="true" data-item="VoltaicCyclosword">
+                <img src="assets/items/WarmogsArmor_item.png" alt="WarmogsArmor" class="item-icon" draggable="true" data-item="WarmogsArmor">
+                <img src="assets/items/WintersApproach_item.png" alt="WintersApproach" class="item-icon" draggable="true" data-item="WintersApproach">
+                <img src="assets/items/WitsEnd_item.png" alt="WitsEnd" class="item-icon" draggable="true" data-item="WitsEnd">
+                <img src="assets/items/YoumuusGhostblade_item.png" alt="YoumuusGhostblade" class="item-icon" draggable="true" data-item="YoumuusGhostblade">
+                <img src="assets/items/ZekesConvergence_item.png" alt="ZekesConvergence" class="item-icon" draggable="true" data-item="ZekesConvergence">
+                <img src="assets/items/ZhonyasHourglass_item.png" alt="ZhonyasHourglass" class="item-icon" draggable="true" data-item="ZhonyasHourglass">
             </div>
         </div>
     </div>

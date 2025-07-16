@@ -1,16 +1,16 @@
 import { Item } from '../Item.js';
 
-export class Bloodthirster extends Item {
+export class OverlordsBloodmail extends Item {
     constructor() {
         super({
-            name: 'Bloodthirster',
-            cost: 3400,
-            sell: 2380,
-            hp: 0,
+            name: 'Overlord´s Bloodmail',
+            cost: 3300,
+            sell: 0,
+            hp: 550,
             hp_regen: 0,
             mana: 0,
             mana_regen: 0,
-            ad: 80,
+            ad: 30,
             attack_speed: 0,
             ap: 0,
             armor: 0,
@@ -23,12 +23,12 @@ export class Bloodthirster extends Item {
             armorpen_percent: 0,
             magicpen_flat: 0,
             magicpen_percent: 0,
-            lifesteal: 0.15,
+            lifesteal: 0,
             ah: 0,
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['marksmen']
+            tags: ['fighter']
         });
     }
 }

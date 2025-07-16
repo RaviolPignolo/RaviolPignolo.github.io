@@ -1,20 +1,20 @@
 import { Item } from '../Item.js';
 
-export class Bloodthirster extends Item {
+export class WitsEnd extends Item {
     constructor() {
         super({
-            name: 'Bloodthirster',
-            cost: 3400,
-            sell: 2380,
+            name: 'Wit´s End',
+            cost: 2800,
+            sell: 0,
             hp: 0,
             hp_regen: 0,
             mana: 0,
             mana_regen: 0,
-            ad: 80,
-            attack_speed: 0,
+            ad: 0,
+            attack_speed: 0.50,
             ap: 0,
             armor: 0,
-            mr: 0,
+            mr: 45,
             healshield_power: 0,
             tenacity: 0,
             crit_chance: 0,
@@ -23,11 +23,11 @@ export class Bloodthirster extends Item {
             armorpen_percent: 0,
             magicpen_flat: 0,
             magicpen_percent: 0,
-            lifesteal: 0.15,
+            lifesteal: 0,
             ah: 0,
             movespeed_flat: 0,
             movespeed_percent: 0,
-            tenacity: 0,
+            tenacity: 0.20,
             tags: ['marksmen']
         });
     }

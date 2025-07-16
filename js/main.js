@@ -1,12 +1,59 @@
 import { Karthus } from './champions/Karthus.js';
 import { Twitch } from './champions/Twitch.js';
+import { AbyssalMask } from './items/AbyssalMask.js';
+import { ArchangelsStaff } from './items/ArchangelsStaff.js';
+import { ArdentCenser } from './items/ArdentCenser.js';
+import { ArmoredAdvance } from './items/ArmoredAdvance.js';
+import { AxiomArc } from './items/AxiomArc.js';
+import { BansheesVeil } from './items/BansheesVeil.js';
+import { BerserkersGreaves } from './items/BerserkersGreaves.js';
+import { BlackCleaver } from './items/BlackCleaver.js';
 import { BlackfireTorch } from './items/BlackfireTorch.js';
+import { BladeOfTheRuinedKing } from './items/BladeOfTheRuinedKing.js';
+import { BloodlettersCurse } from './items/BloodlettersCurse.js';
 import { Bloodthirster } from './items/Bloodthirster.js';
-import { Thornmail } from './items/Thornmail.js';
+import { BootsOfSwiftness } from './items/BootsOfSwiftness.js';
+import { ChempunkChainsword } from './items/ChempunkChainsword.js';
+import { ChainedCrushers } from './items/ChainedCrushers.js';
+import { CosmicDrive } from './items/CosmicDrive.js';
+import { CrimsonLucidity } from './items/CrimsonLucidity.js';
+import { Cryptbloom } from './items/Cryptbloom.js';
+import { Dawncore } from './items/Dawncore.js';
+import { DeadMansPlate } from './items/DeadMansPlate.js';
+import { DeathsDance } from './items/DeathsDance.js';
+import { EchoesOfHelia } from './items/EchoesOfHelia.js';
+// ...continúa con el resto de los ítems...
 import { SpiritVisage } from './items/SpiritVisage.js';
+import { Thornmail } from './items/Thornmail.js';
 
 const championClasses = [Karthus, Twitch];
-const itemClasses = [BlackfireTorch, Bloodthirster, Thornmail, SpiritVisage];
+const itemClasses = [
+  AbyssalMask,
+  ArchangelsStaff,
+  ArdentCenser,
+  ArmoredAdvance,
+  AxiomArc,
+  BansheesVeil,
+  BerserkersGreaves,
+  BlackCleaver,
+  BlackfireTorch,
+  BladeOfTheRuinedKing,
+  BloodlettersCurse,
+  Bloodthirster,
+  BootsOfSwiftness,
+  ChempunkChainsword,
+  ChainedCrushers,
+  CosmicDrive,
+  CrimsonLucidity,
+  Cryptbloom,
+  Dawncore,
+  DeadMansPlate,
+  DeathsDance,
+  EchoesOfHelia,
+  // ...continúa con el resto de los ítems...
+  SpiritVisage,
+  Thornmail
+];
 
 const championSelects = [
     document.getElementById('attacker-champion'),
@@ -180,7 +227,50 @@ window.addEventListener('DOMContentLoaded', () => {
     updateChampion(1);
     renderSkills(0);
     renderSkills(1);
+    renderItemsByCategory('all');
+    setupCategoryMenu();
     setupDragAndDrop();
+// Renderiza los ítems según la categoría seleccionada
+function renderItemsByCategory(category) {
+    const itemsListDiv = document.getElementById('items-icons-list');
+    itemsListDiv.innerHTML = '';
+    let filteredItems;
+    if (category === 'all') {
+        filteredItems = itemClasses;
+    } else {
+        filteredItems = itemClasses.filter(cls => {
+            const instance = new cls();
+            return instance.tags && instance.tags.includes(category);
+        });
+    }
+    filteredItems.forEach(cls => {
+        const instance = new cls();
+        const itemName = cls.name.replace(/\s/g, '');
+        const img = document.createElement('img');
+        img.src = `assets/items/${itemName}_item.png`;
+        img.alt = itemName;
+        img.className = 'item-icon';
+        img.setAttribute('draggable', 'true');
+        img.setAttribute('data-item', itemName);
+        itemsListDiv.appendChild(img);
+    });
+    setupDragAndDrop();
+}
+
+// Configura el menú de categorías para filtrar ítems
+function setupCategoryMenu() {
+    const menu = document.getElementById('items-category-menu');
+    if (!menu) return;
+    menu.querySelectorAll('.category-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            menu.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderItemsByCategory(btn.getAttribute('data-category'));
+        });
+    });
+    // Marca 'Todos' como activo por defecto
+    menu.querySelector('.category-btn[data-category="all"]').classList.add('active');
+}
 });
 
 function renderSkills(side) {

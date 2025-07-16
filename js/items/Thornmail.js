@@ -26,7 +26,9 @@ export class Thornmail extends Item {
             lifesteal: 0,
             ah: 0,
             movespeed_flat: 0,
-            movespeed_percent: 0
+            movespeed_percent: 0,
+            tenacity: 0,
+            tags: ['tank']
         });
     }
 }
