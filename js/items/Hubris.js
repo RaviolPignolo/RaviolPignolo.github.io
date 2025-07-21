@@ -29,7 +29,7 @@ export class Hubris extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['assasin']
+            tags: ['assassin']
         });
     }
 }
