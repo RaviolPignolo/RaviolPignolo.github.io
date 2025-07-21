@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Swiftmarch extends Item {
     constructor() {
         super({
+            image: 'assets/items/Swiftmarch_item.png',
             name: 'Swiftmarch',
             cost: 1500,
-            sell: 0,
+            sell: 1050,
             hp: 0,
             hp_regen: 0,
             mana: 0,

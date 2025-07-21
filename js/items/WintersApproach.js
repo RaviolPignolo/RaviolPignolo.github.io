@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class WintersApproach extends Item {
     constructor() {
         super({
+            image: 'assets/items/WintersApproach_item.png',
             name: 'Winter´s Approach',
             cost: 2400,
-            sell: 0,
+            sell: 1680,
             hp: 550,
             hp_regen: 0,
             mana: 500,

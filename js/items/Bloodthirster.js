@@ -3,6 +3,7 @@ import { Item } from '../Item.js';
 export class Bloodthirster extends Item {
     constructor() {
         super({
+            image: 'assets/items/Bloodthirster_item.png',
             name: 'Bloodthirster',
             cost: 3400,
             sell: 2380,
@@ -28,7 +29,7 @@ export class Bloodthirster extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['marksmen']
+            tags: ['marksman']
         });
     }
 }

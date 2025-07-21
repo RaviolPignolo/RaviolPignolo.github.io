@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class SeraphsEmbrace extends Item {
     constructor() {
         super({
+            image: 'assets/items/SeraphsEmbrace_item.png',
             name: 'Seraph´s Embrace',
             cost: 2900,
-            sell: 0,
+            sell: 2030,
             hp: 0,
             hp_regen: 0,
             mana: 1000,

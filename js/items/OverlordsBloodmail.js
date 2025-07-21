@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class OverlordsBloodmail extends Item {
     constructor() {
         super({
+            image: 'assets/items/OverlordsBloodmail_item.png',
             name: 'Overlord´s Bloodmail',
             cost: 3300,
-            sell: 0,
+            sell: 2310,
             hp: 550,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class OverlordsBloodmail extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['fighter']
+            tags: ['fighter','tank']
         });
     }
 }

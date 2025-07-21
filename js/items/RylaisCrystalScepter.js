@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class RylaisCrystalScepter extends Item {
     constructor() {
         super({
+            image: 'assets/items/RylaisCrystalScepter_item.png',
             name: 'Rylai´s Crystal Scepter',
             cost: 2600,
-            sell: 0,
+            sell: 1820,
             hp: 400,
             hp_regen: 0,
             mana: 0,

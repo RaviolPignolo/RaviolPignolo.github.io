@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class SymbioticSoles extends Item {
     constructor() {
         super({
+            image: 'assets/items/SymbioticSoles_item.png',
             name: 'Symbiotic Soles',
             cost: 900,
-            sell: 0,
+            sell: 630,
             hp: 0,
             hp_regen: 0,
             mana: 0,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ImmortalShieldbow extends Item {
     constructor() {
         super({
+            image: 'assets/items/ImmortalShieldbow_item.png',
             name: 'Immortal Shieldbow',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 0,
             hp_regen: 0,
             mana: 0,

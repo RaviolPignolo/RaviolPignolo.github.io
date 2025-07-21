@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Riftmaker extends Item {
     constructor() {
         super({
+            image: 'assets/items/Riftmaker_item.png',
             name: 'Riftmaker',
             cost: 3100,
-            sell: 0,
+            sell: 2170,
             hp: 350,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class Riftmaker extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['mage', 'fighter']
+            tags: ['mage']
         });
     }
 }

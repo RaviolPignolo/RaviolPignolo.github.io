@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class PhantomDancer extends Item {
     constructor() {
         super({
+            image: 'assets/items/PhantomDancer_item.png',
             name: 'Phantom Dancer',
             cost: 2650,
-            sell: 0,
+            sell: 1855,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class PhantomDancer extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0.10,
             tenacity: 0,
-            tags: ['marksmen']
+            tags: ['marksman']
         });
     }
 }

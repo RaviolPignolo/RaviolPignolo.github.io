@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class CosmicDrive extends Item {
     constructor() {
         super({
+            image: 'assets/items/CosmicDrive_item.png',
             name: 'Cosmic Drive',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 350,
             hp_regen: 0,
             mana: 0,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class RunaansHurricane extends Item {
     constructor() {
         super({
+            image: 'assets/items/RunaansHurricane_item.png',
             name: 'Runaan´s Hurricane',
             cost: 2650,
-            sell: 0,
+            sell: 1855,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class RunaansHurricane extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0.04,
             tenacity: 0,
-            tags: ['marksmen']
+            tags: ['marksman']
         });
     }
 }

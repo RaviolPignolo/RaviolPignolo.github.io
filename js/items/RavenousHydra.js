@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class RavenousHydra extends Item {
     constructor() {
         super({
+            image: 'assets/items/RavenousHydra_item.png',
             name: 'Ravenous Hydra',
             cost: 3300,
-            sell: 0,
+            sell: 2310,
             hp: 0,
             hp_regen: 0,
             mana: 0,

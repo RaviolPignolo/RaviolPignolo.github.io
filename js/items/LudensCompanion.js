@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class LudensCompanion extends Item {
     constructor() {
         super({
+            image: 'assets/items/LudensCompanion_item.png',
             name: 'Luden´s Companion',
             cost: 2750,
-            sell: 0,
+            sell: 1925,
             hp: 0,
             hp_regen: 0,
             mana: 600,

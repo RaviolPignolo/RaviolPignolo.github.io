@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class RabadonsDeathcap extends Item {
     constructor() {
         super({
+            image: 'assets/items/RabadonsDeathcap_item.png',
             name: 'Rabadon´s Deathcap',
             cost: 3500,
-            sell: 0,
+            sell: 2450,
             hp: 0,
             hp_regen: 0,
             mana: 0,

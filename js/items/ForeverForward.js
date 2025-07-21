@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ForeverForward extends Item {
     constructor() {
         super({
+            image: 'assets/items/ForeverForward_item.png',
             name: 'Forever Forward',
             cost: 1400,
-            sell: 0,
+            sell: 980,
             hp: 0,
             hp_regen: 0,
             mana: 0,

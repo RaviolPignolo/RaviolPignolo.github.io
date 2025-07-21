@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Manamune extends Item {
     constructor() {
         super({
+            image: 'assets/items/Manamune_item.png',
             name: 'Manamune',
             cost: 2900,
-            sell: 0,
+            sell: 2030,
             hp: 0,
             hp_regen: 0,
             mana: 500,
@@ -28,7 +29,7 @@ export class Manamune extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['marksmen']
+            tags: ['fighter','marksman','assassin']
         });
     }
 }

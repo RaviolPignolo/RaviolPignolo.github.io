@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class MejaisSoulstealer extends Item {
     constructor() {
         super({
+            image: 'assets/items/MejaisSoulstealer_item.png',
             name: 'Mejai´s Soulstealer',
             cost: 1500,
-            sell: 0,
+            sell: 1050,
             hp: 100,
             hp_regen: 0,
             mana: 0,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Redemption extends Item {
     constructor() {
         super({
+            image: 'assets/items/Redemption_item.png',
             name: 'Redemption',
             cost: 2300,
-            sell: 0,
+            sell: 1610,
             hp: 200,
             hp_regen: 0,
             mana: 0,

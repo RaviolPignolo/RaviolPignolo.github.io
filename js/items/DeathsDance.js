@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class DeathsDance extends Item {
     constructor() {
         super({
+            image: 'assets/items/DeathsDance_item.png',
             name: 'Death´s Dance',
             cost: 3300,
-            sell: 0,
+            sell: 2310,
             hp: 0,
             hp_regen: 0,
             mana: 0,

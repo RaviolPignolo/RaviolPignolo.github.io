@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class SunfireAegis extends Item {
     constructor() {
         super({
+            image: 'assets/items/SunfireAegis_item.png',
             name: 'Sunfire Aegis',
             cost: 2700,
-            sell: 0,
+            sell: 1890,
             hp: 350,
             hp_regen: 0,
             mana: 0,

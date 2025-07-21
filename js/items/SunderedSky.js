@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class SunderedSky extends Item {
     constructor() {
         super({
+            image: 'assets/items/SunderedSky_item.png',
             name: 'Sundered Sky',
             cost: 3100,
-            sell: 0,
+            sell: 2170,
             hp: 400,
             hp_regen: 0,
             mana: 0,

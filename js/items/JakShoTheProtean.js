@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class JakShoTheProtean extends Item {
     constructor() {
         super({
+            image: 'assets/items/JakShoTheProtean_item.png',
             name: 'Jak´Sho, the Protean',
             cost: 3200,
-            sell: 0,
+            sell: 2240,
             hp: 350,
             hp_regen: 0,
             mana: 0,

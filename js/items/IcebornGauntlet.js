@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class IcebornGauntlet extends Item {
     constructor() {
         super({
+            image: 'assets/items/IcebornGauntlet_item.png',
             name: 'Iceborn Gauntlet',
             cost: 2900,
-            sell: 0,
+            sell: 2030,
             hp: 300,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class IcebornGauntlet extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['tank']
+            tags: ['fighter','tank']
         });
     }
 }

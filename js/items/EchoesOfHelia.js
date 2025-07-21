@@ -1,11 +1,12 @@
 import { Item } from '../Item.js';
 
-export class HecoesOfHelia extends Item {
+export class EchoesOfHelia extends Item {
     constructor() {
         super({
-            name: 'Hecoes of Helia',
+            image: 'assets/items/EchoesOfHelia_item.png',
+            name: 'Echoes of Helia',
             cost: 2200,
-            sell: 0,
+            sell: 1540,
             hp: 200,
             hp_regen: 0,
             mana: 0,

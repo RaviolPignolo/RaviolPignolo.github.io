@@ -3,6 +3,7 @@ import { Item } from '../Item.js';
 export class Thornmail extends Item {
     constructor() {
         super({
+            image: 'assets/items/Thornmail_item.png',
             name: 'Thornmail',
             cost: 2450,
             sell: 1715,

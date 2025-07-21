@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class TitanicHydra extends Item {
     constructor() {
         super({
+            image: 'assets/items/TitanicHydra_item.png',
             name: 'Titanic Hydra',
             cost: 3300,
-            sell: 0,
+            sell: 2310,
             hp: 600,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class TitanicHydra extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['fighter']
+            tags: ['fighter','tank']
         });
     }
 }

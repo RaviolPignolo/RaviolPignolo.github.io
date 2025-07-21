@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ExperimentalHexplate extends Item {
     constructor() {
         super({
+            image: 'assets/items/ExperimentalHexplate_item.png',
             name: 'Experimental Hexplate',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 450,
             hp_regen: 0,
             mana: 0,

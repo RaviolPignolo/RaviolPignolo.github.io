@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ProfaneHydra extends Item {
     constructor() {
         super({
+            image: 'assets/items/ProfaneHydra_item.png',
             name: 'Profane Hydra',
             cost: 3200,
-            sell: 0,
+            sell: 2240,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class ProfaneHydra extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['assasin']
+            tags: ['assassin']
         });
     }
 }

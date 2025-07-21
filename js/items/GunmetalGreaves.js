@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class GunmetalGreaves extends Item {
     constructor() {
         super({
+            image: 'assets/items/GunmetalGreaves_item.png',
             name: 'Gunmetal Greaves',
             cost: 1600,
-            sell: 0,
+            sell: 1120,
             hp: 0,
             hp_regen: 0,
             mana: 0,

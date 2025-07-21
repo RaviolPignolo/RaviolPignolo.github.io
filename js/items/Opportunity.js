@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Opportunity extends Item {
     constructor() {
         super({
+            image: 'assets/items/Opportunity_item.png',
             name: 'Opportunity',
             cost: 2700,
-            sell: 0,
+            sell: 1890,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class Opportunity extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['assasin']
+            tags: ['assassin']
         });
     }
 }

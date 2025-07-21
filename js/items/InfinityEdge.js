@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class InfinityEdge extends Item {
     constructor() {
         super({
+            image: 'assets/items/InfinityEdge_item.png',
             name: 'Infinity Edge',
             cost: 3450,
-            sell: 0,
+            sell: 2415,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class InfinityEdge extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['marksmen']
+            tags: ['marksman']
         });
     }
 }

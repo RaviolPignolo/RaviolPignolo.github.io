@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ImperialMandate extends Item {
     constructor() {
         super({
+            image: 'assets/items/ImperialMandate_item.png',
             name: 'Imperial Mandate',
             cost: 2250,
-            sell: 0,
+            sell: 1575,
             hp: 0,
             hp_regen: 0,
             mana: 0,

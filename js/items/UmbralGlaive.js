@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class UmbralGlaive extends Item {
     constructor() {
         super({
+            image: 'assets/items/UmbralGlaive_item.png',
             name: 'Umbral Glaive',
             cost: 2500,
-            sell: 0,
+            sell: 1750,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class UmbralGlaive extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['assasin']
+            tags: ['assassin']
         });
     }
 }

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class EdgeOfNight extends Item {
     constructor() {
         super({
+            image: 'assets/items/EdgeOfNight_item.png',
             name: 'Edge of Night',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 250,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class EdgeOfNight extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['assasin']
+            tags: ['assassin']
         });
     }
 }

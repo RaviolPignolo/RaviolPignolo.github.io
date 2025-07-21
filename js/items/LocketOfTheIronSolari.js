@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class LocketOfTheIronSolari extends Item {
     constructor() {
         super({
+            image: 'assets/items/LocketOfTheIronSolari_item.png',
             name: 'Locket of the Iron Solari',
             cost: 2200,
-            sell: 0,
+            sell: 1540,
             hp: 200,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class LocketOfTheIronSolari extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['support']
+            tags: ['tank','support']
         });
     }
 }

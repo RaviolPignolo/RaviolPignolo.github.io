@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class UnendingDespair extends Item {
     constructor() {
         super({
+            image: 'assets/items/UnendingDespair_item.png',
             name: 'Unending Despair',
             cost: 2800,
-            sell: 0,
+            sell: 1960,
             hp: 400,
             hp_regen: 0,
             mana: 0,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class BladeOfTheRuinedKing extends Item {
     constructor() {
         super({
+            image: 'assets/items/BladeOfTheRuinedKing_item.png',
             name: 'Blade of the Ruined King',
-            cost: 0,
-            sell: 0,
+            cost: 3200,
+            sell: 2240,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class BladeOfTheRuinedKing extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['marksman']
+            tags: ['fighter','marksman']
         });
     }
 }

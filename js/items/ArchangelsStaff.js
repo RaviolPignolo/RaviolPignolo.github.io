@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ArchangelsStaff extends Item {
     constructor() {
         super({
+            image: 'assets/items/ArchangelsStaff_item.png',
             name: 'Archangel´s Staff',
             cost: 2900,
-            sell: 0,
+            sell: 2030,
             hp: 0,
             hp_regen: 0,
             mana: 600,

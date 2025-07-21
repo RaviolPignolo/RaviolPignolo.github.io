@@ -3,6 +3,7 @@ import { Item } from '../Item.js';
 export class SpiritVisage extends Item {
     constructor() {
         super({
+            image: 'assets/items/SpiritVisage_item.png',
             name: 'Spirit Visage',
             cost: 2700,
             sell: 1890,

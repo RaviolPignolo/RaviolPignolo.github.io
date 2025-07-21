@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class MercurialScimitar extends Item {
     constructor() {
         super({
+            image: 'assets/items/MercurialScimitar_item.png',
             name: 'Mercurial Scimitar',
             cost: 3200,
-            sell: 0,
+            sell: 2240,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class MercurialScimitar extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['marksmen', 'fighter']
+            tags: ['fighter','marksman']
         });
     }
 }

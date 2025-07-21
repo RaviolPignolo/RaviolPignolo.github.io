@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class HextechRocketbelt extends Item {
     constructor() {
         super({
+            image: 'assets/items/HextechRocketbelt_item.png',
             name: 'Hextech Rocketbelt',
             cost: 2650,
-            sell: 0,
+            sell: 1855,
             hp: 300,
             hp_regen: 0,
             mana: 0,

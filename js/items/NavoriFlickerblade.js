@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class NavoriFlickerblade extends Item {
     constructor() {
         super({
+            image: 'assets/items/NavoriFlickerblade_item.png',
             name: 'Navori Flickerblade',
             cost: 2650,
-            sell: 0,
+            sell: 1855,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class NavoriFlickerblade extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0.04,
             tenacity: 0,
-            tags: ['marksmen']
+            tags: ['marksman']
         });
     }
 }

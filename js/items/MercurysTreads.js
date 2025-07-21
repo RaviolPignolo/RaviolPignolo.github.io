@@ -1,11 +1,12 @@
 import { Item } from '../Item.js';
 
-export class MercuryTreads extends Item {
+export class MercurysTreads extends Item {
     constructor() {
         super({
+            image: 'assets/items/MercurysTreads_item.png',
             name: 'Mercury´s Treads',
             cost: 1250,
-            sell: 0,
+            sell: 875,
             hp: 0,
             hp_regen: 0,
             mana: 0,

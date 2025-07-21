@@ -3,6 +3,7 @@ import { Item } from '../Item.js';
 export class BlackfireTorch extends Item {
     constructor() {
         super({
+            image: 'assets/items/BlackfireTorch_item.png',
             name: 'Blackfire Torch',
             cost: 2800,
             sell: 1960,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class BansheesVeil extends Item {
     constructor() {
         super({
+            image: 'assets/items/BansheesVeil_item.png',
             name: 'Banshee´s Veil',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 0,
             hp_regen: 0,
             mana: 0,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Hullbreaker extends Item {
     constructor() {
         super({
+            image: 'assets/items/Hullbreaker_item.png',
             name: 'Hullbreaker',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 500,
             hp_regen: 0,
             mana: 0,

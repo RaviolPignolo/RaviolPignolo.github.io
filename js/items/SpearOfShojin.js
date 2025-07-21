@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class SpearOfShojin extends Item {
     constructor() {
         super({
+            image: 'assets/items/SpearOfShojin_item.png',
             name: 'Spear of Shojin',
             cost: 3100,
-            sell: 0,
+            sell: 2170,
             hp: 450,
             hp_regen: 0,
             mana: 0,

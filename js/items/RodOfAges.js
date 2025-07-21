@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class RodOfAges extends Item {
     constructor() {
         super({
+            image: 'assets/items/RodOfAges_item.png',
             name: 'Rod of Ages',
             cost: 2600,
-            sell: 0,
+            sell: 1820,
             hp: 350,
             hp_regen: 0,
             mana: 500,

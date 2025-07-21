@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class MikaelsBlessing extends Item {
     constructor() {
         super({
+            image: 'assets/items/MikaelsBlessing_item.png',
             name: 'Mikael´s Blessing',
             cost: 2300,
-            sell: 0,
+            sell: 1610,
             hp: 250,
             hp_regen: 0,
             mana: 0,

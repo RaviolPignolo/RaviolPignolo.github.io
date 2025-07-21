@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class RanduinsOmen extends Item {
     constructor() {
         super({
+            image: 'assets/items/RanduinsOmen_item.png',
             name: 'Randuin´s Omen',
             cost: 2700,
-            sell: 0,
+            sell: 1890,
             hp: 350,
             hp_regen: 0,
             mana: 0,

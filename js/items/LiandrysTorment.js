@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class LiandrysTorment extends Item {
     constructor() {
         super({
+            image: 'assets/items/LiandrysTorment_item.png',
             name: 'Liandry´s Torment',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 300,
             hp_regen: 0,
             mana: 0,

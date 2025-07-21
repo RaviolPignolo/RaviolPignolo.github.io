@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class HollowRadiance extends Item {
     constructor() {
         super({
+            image: 'assets/items/HollowRadiance_item.png',
             name: 'Hollow Radiance',
             cost: 2800,
-            sell: 0,
+            sell: 1960,
             hp: 400,
             hp_regen: 1.00,
             mana: 0,

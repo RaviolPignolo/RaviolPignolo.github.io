@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ArmoredAdvance extends Item {
     constructor() {
         super({
+            image: 'assets/items/ArmoredAdvance_item.png',
             name: 'Armored Advance',
             cost: 1700,
-            sell: 0,
+            sell: 1190,
             hp: 0,
             hp_regen: 0,
             mana: 0,

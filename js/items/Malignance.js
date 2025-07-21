@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Malignance extends Item {
     constructor() {
         super({
+            image: 'assets/items/Malignance_item.png',
             name: 'Malignance',
             cost: 2700,
-            sell: 0,
+            sell: 1890,
             hp: 0,
             hp_regen: 0,
             mana: 600,

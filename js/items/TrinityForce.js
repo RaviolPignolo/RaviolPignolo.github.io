@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class TrinityForce extends Item {
     constructor() {
         super({
+            image: 'assets/items/TrinityForce_item.png',
             name: 'Trinity Force',
             cost: 3333,
-            sell: 0,
+            sell: 2333,
             hp: 333,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class TrinityForce extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['fighter']
+            tags: ['fighter','marksman']
         });
     }
 }

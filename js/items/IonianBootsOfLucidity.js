@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class IonianBootsOfLucidity extends Item {
     constructor() {
         super({
+            image: 'assets/items/IonianBootsOfLucidity_item.png',
             name: 'Ionian Boots of Lucidity',
             cost: 900,
-            sell: 0,
+            sell: 630,
             hp: 0,
             hp_regen: 0,
             mana: 0,

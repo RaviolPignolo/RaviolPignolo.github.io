@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Heartsteel extends Item {
     constructor() {
         super({
+            image: 'assets/items/Heartsteel_item.png',
             name: 'Heartsteel',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 900,
             hp_regen: 1.00,
             mana: 0,

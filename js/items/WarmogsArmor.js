@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class WarmogsArmor extends Item {
     constructor() {
         super({
+            image: 'assets/items/WarmogsArmor_item.png',
             name: 'Warmog´s Armor',
             cost: 3100,
-            sell: 0,
+            sell: 2170,
             hp: 1000,
             hp_regen: 1.00,
             mana: 0,

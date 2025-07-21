@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class YoumuusGhostblade extends Item {
     constructor() {
         super({
+            image: 'assets/items/YoumuusGhostblade_item.png',
             name: 'Youmuu´s Ghostblade',
             cost: 2800,
-            sell: 0,
+            sell: 1960,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class YoumuusGhostblade extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0.04,
             tenacity: 0,
-            tags: ['assasin']
+            tags: ['assassin']
         });
     }
 }

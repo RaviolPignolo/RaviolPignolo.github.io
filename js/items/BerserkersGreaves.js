@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class BerserkersGreaves extends Item {
     constructor() {
         super({
+            image: 'assets/items/BerserkersGreaves_item.png',
             name: 'Berserker´s Greaves',
             cost: 1100,
-            sell: 0,
+            sell: 770,
             hp: 0,
             hp_regen: 0,
             mana: 0,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class BootsOfSwiftness extends Item {
     constructor() {
         super({
+            image: 'assets/items/BootsOfSwiftness_item.png',
             name: 'Boots of Swiftness',
             cost: 1000,
-            sell: 0,
+            sell: 700,
             hp: 0,
             hp_regen: 0,
             mana: 0,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ArdentCenser extends Item {
     constructor() {
         super({
+            image: 'assets/items/ArdentCenser_item.png',
             name: 'Ardent Censer',
             cost: 2200,
-            sell: 0,
+            sell: 1540,
             hp: 0,
             hp_regen: 0,
             mana: 0,

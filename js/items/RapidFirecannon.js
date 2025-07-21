@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class RapidFirecannon extends Item {
     constructor() {
         super({
+            image: 'assets/items/RapidFirecannon_item.png',
             name: 'Rapid Firecannon',
             cost: 2650,
-            sell: 0,
+            sell: 1855,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class RapidFirecannon extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0.04,
             tenacity: 0,
-            tags: ['marksmen']
+            tags: ['marksman']
         });
     }
 }

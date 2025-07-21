@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class MoonstoneRenewer extends Item {
     constructor() {
         super({
+            image: 'assets/items/MoonstoneRenewer_item.png',
             name: 'Moonstone Renewer',
             cost: 2200,
-            sell: 0,
+            sell: 1540,
             hp: 200,
             hp_regen: 0,
             mana: 0,

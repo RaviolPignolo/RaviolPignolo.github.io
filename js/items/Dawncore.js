@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Dawncore extends Item {
     constructor() {
         super({
+            image: 'assets/items/Dawncore_item.png',
             name: 'Dawncore',
             cost: 2500,
-            sell: 0,
+            sell: 1750,
             hp: 0,
             hp_regen: 0,
             mana: 0,

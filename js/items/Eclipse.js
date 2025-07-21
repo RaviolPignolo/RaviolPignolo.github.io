@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Eclipse extends Item {
     constructor() {
         super({
+            image: 'assets/items/Eclipse_item.png',
             name: 'Eclipse',
             cost: 2900,
-            sell: 0,
+            sell: 2030,
             hp: 0,
             hp_regen: 0,
             mana: 0,

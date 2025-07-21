@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class StaffOfFlowingWater extends Item {
     constructor() {
         super({
+            image: 'assets/items/StaffOfFlowingWater_item.png',
             name: 'Staff of Flowing Water',
             cost: 2250,
-            sell: 0,
+            sell: 1575,
             hp: 0,
             hp_regen: 0,
             mana: 0,

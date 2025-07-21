@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class DeadMansPlate extends Item {
     constructor() {
         super({
+            image: 'assets/items/DeadMansPlate_item.png',
             name: 'Dead Man´s Plate',
             cost: 2900,
-            sell: 0,
+            sell: 2030,
             hp: 350,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class DeadMansPlate extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0.04,
             tenacity: 0,
-            tags: ['tank']
+            tags: ['fighter','tank']
         });
     }
 }

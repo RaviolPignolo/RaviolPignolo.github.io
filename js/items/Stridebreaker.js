@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Stridebreaker extends Item {
     constructor() {
         super({
+            image: 'assets/items/Stridebreaker_item.png',
             name: 'Stridebreaker',
             cost: 3300,
-            sell: 0,
+            sell: 2310,
             hp: 450,
             hp_regen: 0,
             mana: 0,

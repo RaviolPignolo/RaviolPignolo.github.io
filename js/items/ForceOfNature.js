@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ForceOfNature extends Item {
     constructor() {
         super({
+            image: 'assets/items/ForceOfNature_item.png',
             name: 'Force of Nature',
             cost: 2800,
-            sell: 0,
+            sell: 1960,
             hp: 400,
             hp_regen: 0,
             mana: 0,

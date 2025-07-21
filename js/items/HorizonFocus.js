@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class HorizonFocus extends Item {
     constructor() {
         super({
+            image: 'assets/items/HorizonFocus_item.png',
             name: 'Horizon Focus',
             cost: 2800,
-            sell: 0,
+            sell: 1960,
             hp: 0,
             hp_regen: 0,
             mana: 0,

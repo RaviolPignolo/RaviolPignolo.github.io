@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class WitsEnd extends Item {
     constructor() {
         super({
+            image: 'assets/items/WitsEnd_item.png',
             name: 'Wit´s End',
             cost: 2800,
-            sell: 0,
+            sell: 1960,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class WitsEnd extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0.20,
-            tags: ['marksmen']
+            tags: ['fighter','marksman']
         });
     }
 }

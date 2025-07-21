@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Fimbulwinter extends Item {
     constructor() {
         super({
+            image: 'assets/items/Fimbulwinter_item.png',
             name: 'Fimbulwinter',
             cost: 2400,
-            sell: 0,
+            sell: 1680,
             hp: 550,
             hp_regen: 0,
             mana: 860,

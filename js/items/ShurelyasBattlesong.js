@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class ShurelyasBattlesong extends Item {
     constructor() {
         super({
+            image: 'assets/items/ShurelyasBattlesong_item.png',
             name: 'Shurelya´s Battlesong',
             cost: 2200,
-            sell: 0,
+            sell: 1540,
             hp: 0,
             hp_regen: 0,
             mana: 0,

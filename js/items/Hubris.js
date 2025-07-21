@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Hubris extends Item {
     constructor() {
         super({
+            image: 'assets/items/Hubris_item.png',
             name: 'Hubris',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 0,
             hp_regen: 0,
             mana: 0,

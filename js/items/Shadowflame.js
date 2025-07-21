@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Shadowflame extends Item {
     constructor() {
         super({
+            image: 'assets/items/Shadowflame_item.png',
             name: 'Shadowflame',
             cost: 3200,
-            sell: 0,
+            sell: 2240,
             hp: 0,
             hp_regen: 0,
             mana: 0,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class EssenceReaver extends Item {
     constructor() {
         super({
+            image: 'assets/items/EssenceReaver_item.png',
             name: 'Essence Reaver',
             cost: 2900,
-            sell: 0,
+            sell: 2030,
             hp: 0,
             hp_regen: 0,
             mana: 0,

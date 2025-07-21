@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Stormsurge extends Item {
     constructor() {
         super({
+            image: 'assets/items/Stormsurge_item.png',
             name: 'Stormsurge',
             cost: 2800,
-            sell: 0,
+            sell: 1960,
             hp: 0,
             hp_regen: 0,
             mana: 0,

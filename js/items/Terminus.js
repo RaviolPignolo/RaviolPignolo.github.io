@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Terminus extends Item {
     constructor() {
         super({
+            image: 'assets/items/Terminus_item.png',
             name: 'Terminus',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class Terminus extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['terminus']
+            tags: ['fighter','marksman']
         });
     }
 }

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class PlatedSteelcaps extends Item {
     constructor() {
         super({
+            image: 'assets/items/PlatedSteelcaps_item.png',
             name: 'Plated Steelcaps',
             cost: 1200,
-            sell: 0,
+            sell: 840,
             hp: 0,
             hp_regen: 0,
             mana: 0,

@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class Morellonomicon extends Item {
     constructor() {
         super({
+            image: 'assets/items/Morellonomicon_item.png',
             name: 'Morellonomicon',
             cost: 2850,
-            sell: 0,
+            sell: 1995,
             hp: 350,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class Morellonomicon extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['mage']
+            tags: ['mage','support']
         });
     }
 }

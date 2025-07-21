@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class AbyssalMask extends Item {
     constructor() {
         super({
+            image: 'assets/items/AbyssalMask_item.png',
             name: 'Abyssal Mask',
             cost: 2650,
-            sell: 0,
+            sell: 1855,
             hp: 350,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class AbyssalMask extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['tank']
+            tags: ['tank', 'support']
         });
     }
 }

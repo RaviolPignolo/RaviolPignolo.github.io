@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class GuinsoosRageblade extends Item {
     constructor() {
         super({
+            image: 'assets/items/GuinsoosRageblade_item.png',
             name: 'Guinsoo´s Rageblade',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class GuinsoosRageblade extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['marksman']
+            tags: ['fighter','marksman']
         });
     }
 }

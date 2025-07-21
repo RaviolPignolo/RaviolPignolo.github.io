@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class SeryldasGrudge extends Item {
     constructor() {
         super({
+            image: 'assets/items/SeryldasGrudge_item.png',
             name: 'Serylda´s Grudge',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class SeryldasGrudge extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['fighter']
+            tags: ['assassin']
         });
     }
 }

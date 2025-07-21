@@ -1,11 +1,12 @@
 import { Item } from '../Item.js';
 
-export class ChainedCrushers extends Item {
+export class ChainlacedCrushers extends Item {
     constructor() {
         super({
+            image: 'assets/items/ChainlacedCrushers_item.png',
             name: 'Chained Crushers',
             cost: 1750,
-            sell: 0,
+            sell: 1225,
             hp: 0,
             hp_regen: 0,
             mana: 0,

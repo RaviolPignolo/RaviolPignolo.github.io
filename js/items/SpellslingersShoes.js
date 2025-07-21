@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class SpellslingersShoes extends Item {
     constructor() {
         super({
+            image: 'assets/items/SpellslingersShoes_item.png',
             name: 'Spellslinger´s Shoes',
             cost: 1600,
-            sell: 0,
+            sell: 1120,
             hp: 0,
             hp_regen: 0,
             mana: 0,

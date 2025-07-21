@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class VoidStaff extends Item {
     constructor() {
         super({
+            image: 'assets/items/VoidStaff_item.png',
             name: 'Void Staff',
             cost: 3000,
-            sell: 0,
+            sell: 2100,
             hp: 0,
             hp_regen: 0,
             mana: 0,

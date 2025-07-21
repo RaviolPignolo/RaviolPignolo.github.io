@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class LordDominiksRegards extends Item {
     constructor() {
         super({
+            image: 'assets/items/LordDominiksRegards_item.png',
             name: 'Lord Dominik´s Regards',
             cost: 3100,
-            sell: 0,
+            sell: 2170,
             hp: 0,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class LordDominiksRegards extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['marksmen']
+            tags: ['marksman']
         });
     }
 }

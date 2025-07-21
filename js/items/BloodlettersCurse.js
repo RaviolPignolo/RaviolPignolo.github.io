@@ -3,9 +3,10 @@ import { Item } from '../Item.js';
 export class BloodlettersCurse extends Item {
     constructor() {
         super({
+            image: 'assets/items/BloodlettersCurse_item.png',
             name: 'BloodLetter´s Curse',
             cost: 2900,
-            sell: 0,
+            sell: 2030,
             hp: 400,
             hp_regen: 0,
             mana: 0,
@@ -28,7 +29,7 @@ export class BloodlettersCurse extends Item {
             movespeed_flat: 0,
             movespeed_percent: 0,
             tenacity: 0,
-            tags: ['mage', 'fighter']
+            tags: ['mage']
         });
     }
 }

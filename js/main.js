@@ -1,5 +1,7 @@
+// Champions
 import { Karthus } from './champions/Karthus.js';
 import { Twitch } from './champions/Twitch.js';
+// Items
 import { AbyssalMask } from './items/AbyssalMask.js';
 import { ArchangelsStaff } from './items/ArchangelsStaff.js';
 import { ArdentCenser } from './items/ArdentCenser.js';
@@ -12,9 +14,10 @@ import { BlackfireTorch } from './items/BlackfireTorch.js';
 import { BladeOfTheRuinedKing } from './items/BladeOfTheRuinedKing.js';
 import { BloodlettersCurse } from './items/BloodlettersCurse.js';
 import { Bloodthirster } from './items/Bloodthirster.js';
+import { Boots } from './items/Boots.js';
 import { BootsOfSwiftness } from './items/BootsOfSwiftness.js';
 import { ChempunkChainsword } from './items/ChempunkChainsword.js';
-import { ChainedCrushers } from './items/ChainedCrushers.js';
+import { ChainlacedCrushers } from './items/ChainlacedCrushers.js';
 import { CosmicDrive } from './items/CosmicDrive.js';
 import { CrimsonLucidity } from './items/CrimsonLucidity.js';
 import { Cryptbloom } from './items/Cryptbloom.js';
@@ -22,9 +25,100 @@ import { Dawncore } from './items/Dawncore.js';
 import { DeadMansPlate } from './items/DeadMansPlate.js';
 import { DeathsDance } from './items/DeathsDance.js';
 import { EchoesOfHelia } from './items/EchoesOfHelia.js';
-// ...continúa con el resto de los ítems...
+import { Eclipse } from './items/Eclipse.js';
+import { EdgeOfNight } from './items/EdgeOfNight.js';
+import { EssenceReaver } from './items/EssenceReaver.js';
+import { ExperimentalHexplate } from './items/ExperimentalHexplate.js';
+import { Fimbulwinter } from './items/Fimbulwinter.js';
+import { ForceOfNature } from './items/ForceOfNature.js';
+import { ForeverForward } from './items/ForeverForward.js';
+import { FrozenHeart } from './items/FrozenHeart.js';
+import { GuardianAngel } from './items/GuardianAngel.js';
+import { GuinsoosRageblade } from './items/GuinsoosRageblade.js';
+import { GunmetalGreaves } from './items/GunmetalGreaves.js';
+import { Heartsteel } from './items/Heartsteel.js';
+import { HextechRocketbelt } from './items/HextechRocketbelt.js';
+import { HollowRadiance } from './items/HollowRadiance.js';
+import { HorizonFocus } from './items/HorizonFocus.js';
+import { Hubris } from './items/Hubris.js';
+import { Hullbreaker } from './items/Hullbreaker.js';
+import { IcebornGauntlet } from './items/IcebornGauntlet.js';
+import { ImmortalShieldbow } from './items/ImmortalShieldbow.js';
+import { ImperialMandate } from './items/ImperialMandate.js';
+import { InfinityEdge } from './items/InfinityEdge.js';
+import { IonianBootsOfLucidity } from './items/IonianBootsOfLucidity.js';
+import { JakShoTheProtean } from './items/JakShoTheProtean.js';
+import { KaenicRookern } from './items/KaenicRookern.js';
+import { KnightsVow } from './items/KnightsVow.js';
+import { KrakenSlayer } from './items/KrakenSlayer.js';
+import { LiandrysTorment } from './items/LiandrysTorment.js';
+import { LichBane } from './items/LichBane.js';
+import { LocketOfTheIronSolari } from './items/LocketOfTheIronSolari.js';
+import { LordDominiksRegards } from './items/LordDominiksRegards.js';
+import { LudensCompanion } from './items/LudensCompanion.js';
+import { Malignance } from './items/Malignance.js';
+import { Manamune } from './items/Manamune.js';
+import { MawOfMalmortius } from './items/MawOfMalmortius.js';
+import { MejaisSoulstealer } from './items/MejaisSoulstealer.js';
+import { MercurialScimitar } from './items/MercurialScimitar.js';
+import { MercurysTreads } from './items/MercurysTreads.js';
+import { MikaelsBlessing } from './items/MikaelsBlessing.js';
+import { MoonstoneRenewer } from './items/MoonstoneRenewer.js';
+import { Morellonomicon } from './items/Morellonomicon.js';
+import { MortalReminder } from './items/MortalReminder.js';
+import { Muramana } from './items/Muramana.js';
+import { NashorsTooth } from './items/NashorsTooth.js';
+import { NavoriFlickerblade } from './items/NavoriFlickerblade.js';
+import { Opportunity } from './items/Opportunity.js';
+import { OverlordsBloodmail } from './items/OverlordsBloodmail.js';
+import { PhantomDancer } from './items/PhantomDancer.js';
+import { PlatedSteelcaps } from './items/PlatedSteelcaps.js';
+import { ProfaneHydra } from './items/ProfaneHydra.js';
+import { RabadonsDeathcap } from './items/RabadonsDeathcap.js';
+import { RanduinsOmen } from './items/RanduinsOmen.js';
+import { RapidFirecannon } from './items/RapidFirecannon.js';
+import { RavenousHydra } from './items/RavenousHydra.js';
+import { Redemption } from './items/Redemption.js';
+import { Riftmaker } from './items/Riftmaker.js';
+import { RodOfAges } from './items/RodOfAges.js';
+import { RunaansHurricane } from './items/RunaansHurricane.js';
+import { RylaisCrystalScepter } from './items/RylaisCrystalScepter.js';
+import { SeraphsEmbrace } from './items/SeraphsEmbrace.js';
+import { SerpentsFang } from './items/SerpentsFang.js';
+import { SeryldasGrudge } from './items/SeryldasGrudge.js';
+import { Shadowflame } from './items/Shadowflame.js';
+import { ShurelyasBattlesong } from './items/ShurelyasBattlesong.js';
+import { SorcerersShoes } from './items/SorcerersShoes.js';
+import { SpearOfShojin } from './items/SpearOfShojin.js';
+import { SpellslingersShoes } from './items/SpellslingersShoes.js';
 import { SpiritVisage } from './items/SpiritVisage.js';
+import { StaffOfFlowingWater } from './items/StaffOfFlowingWater.js';
+import { StatikkShiv } from './items/StatikkShiv.js';
+import { SteraksGage } from './items/SteraksGage.js';
+import { Stormsurge } from './items/Stormsurge.js';
+import { Stridebreaker } from './items/Stridebreaker.js';
+import { SunderedSky } from './items/SunderedSky.js';
+import { SunfireAegis } from './items/SunfireAegis.js';
+import { Swiftmarch } from './items/Swiftmarch.js';
+import { SymbioticSoles } from './items/SymbioticSoles.js';
+import { SynchronizedSouls } from './items/SynchronizedSouls.js';
+import { Terminus } from './items/Terminus.js';
+import { TheCollector } from './items/TheCollector.js';
 import { Thornmail } from './items/Thornmail.js';
+import { TitanicHydra } from './items/TitanicHydra.js';
+import { Trailblazer } from './items/Trailblazer.js';
+import { TrinityForce } from './items/TrinityForce.js';
+import { UmbralGlaive } from './items/UmbralGlaive.js';
+import { UnendingDespair } from './items/UnendingDespair.js';
+import { VoidStaff } from './items/VoidStaff.js';
+import { VoltaicCyclosword } from './items/VoltaicCyclosword.js';
+import { WarmogsArmor } from './items/WarmogsArmor.js';
+import { WintersApproach } from './items/WintersApproach.js';
+import { WitsEnd } from './items/WitsEnd.js';
+import { YoumuusGhostblade } from './items/YoumuusGhostblade.js';
+import { YunTalWildarrows } from './items/YunTalWildarrows.js';
+import { ZekesConvergence } from './items/ZekesConvergence.js';
+import { ZhonyasHourglass } from './items/ZhonyasHourglass.js';
 
 const championClasses = [Karthus, Twitch];
 const itemClasses = [
@@ -40,9 +134,10 @@ const itemClasses = [
   BladeOfTheRuinedKing,
   BloodlettersCurse,
   Bloodthirster,
+  Boots,
   BootsOfSwiftness,
+  ChainlacedCrushers,
   ChempunkChainsword,
-  ChainedCrushers,
   CosmicDrive,
   CrimsonLucidity,
   Cryptbloom,
@@ -50,11 +145,101 @@ const itemClasses = [
   DeadMansPlate,
   DeathsDance,
   EchoesOfHelia,
-  // ...continúa con el resto de los ítems...
+  Eclipse,
+  EdgeOfNight,
+  EssenceReaver,
+  ExperimentalHexplate,
+  Fimbulwinter,
+  ForceOfNature,
+  ForeverForward,
+  FrozenHeart,
+  GuardianAngel,
+  GuinsoosRageblade,
+  GunmetalGreaves,
+  Heartsteel,
+  HextechRocketbelt,
+  HollowRadiance,
+  HorizonFocus,
+  Hubris,
+  Hullbreaker,
+  IcebornGauntlet,
+  ImmortalShieldbow,
+  ImperialMandate,
+  InfinityEdge,
+  IonianBootsOfLucidity,
+  JakShoTheProtean,
+  KaenicRookern,
+  KnightsVow,
+  KrakenSlayer,
+  LiandrysTorment,
+  LichBane,
+  LocketOfTheIronSolari,
+  LordDominiksRegards,
+  LudensCompanion,
+  Malignance,
+  Manamune,
+  MawOfMalmortius,
+  MejaisSoulstealer,
+  MercurialScimitar,
+  MercurysTreads,
+  MikaelsBlessing,
+  MoonstoneRenewer,
+  Morellonomicon,
+  MortalReminder,
+  Muramana,
+  NashorsTooth,
+  NavoriFlickerblade,
+  Opportunity,
+  OverlordsBloodmail,
+  PhantomDancer,
+  PlatedSteelcaps,
+  ProfaneHydra,
+  RabadonsDeathcap,
+  RanduinsOmen,
+  RapidFirecannon,
+  RavenousHydra,
+  Redemption,
+  Riftmaker,
+  RodOfAges,
+  RunaansHurricane,
+  RylaisCrystalScepter,
+  SeraphsEmbrace,
+  SerpentsFang,
+  SeryldasGrudge,
+  Shadowflame,
+  ShurelyasBattlesong,
+  SorcerersShoes,
+  SpearOfShojin,
+  SpellslingersShoes,
   SpiritVisage,
-  Thornmail
+  StaffOfFlowingWater,
+  StatikkShiv,
+  SteraksGage,
+  Stormsurge,
+  Stridebreaker,
+  SunderedSky,
+  SunfireAegis,
+  Swiftmarch,
+  SymbioticSoles,
+  SynchronizedSouls,
+  Terminus,
+  TheCollector,
+  Thornmail,
+  TitanicHydra,
+  Trailblazer,
+  TrinityForce,
+  UmbralGlaive,
+  UnendingDespair,
+  VoidStaff,
+  VoltaicCyclosword,
+  WarmogsArmor,
+  WintersApproach,
+  WitsEnd,
+  YoumuusGhostblade,
+  YunTalWildarrows,
+  ZekesConvergence,
+  ZhonyasHourglass
 ];
-
 const championSelects = [
     document.getElementById('attacker-champion'),
     document.getElementById('defender-champion')
@@ -70,6 +255,7 @@ const statsDivs = [
 
 let champions = [null, null];
 let items = [[], []];
+let allItems = [];
 
 function renderChampionOptions() {
     championSelects.forEach(select => {
@@ -87,7 +273,6 @@ function renderChampionOptions() {
 function updateChampion(side) {
     const champIdx = parseInt(championSelects[side].value);
     champions[side] = new championClasses[champIdx]();
-    // Mantener el nivel seleccionado si ya había uno
     let currentLevel = parseInt(levelInputs[side].value);
     if (isNaN(currentLevel) || currentLevel < 1) currentLevel = 1;
     if (currentLevel > 18) currentLevel = 18;
@@ -95,7 +280,6 @@ function updateChampion(side) {
     if (typeof champions[side].recalculateStats === 'function') {
         champions[side].recalculateStats();
     }
-    // Reset items
     items[side] = Array(6).fill(null);
     updateChampionItems(side);
     renderStats(side);
@@ -104,16 +288,12 @@ function updateChampion(side) {
 
 function updateChampionItems(side) {
     if (!champions[side]) return;
-    // Limpiar inventario y recalcular stats base
     champions[side].inventory = Array(6).fill(null);
-    // No llamar a recalculateStats aquí, solo a applyItemsStats
-    // Asignar ítems seleccionados al inventario
     items[side].forEach((idx, i) => {
-        if (idx !== null && itemClasses[idx]) {
-            champions[side].inventory[i] = new itemClasses[idx]();
+        if (idx !== null && allItems[idx]) {
+            champions[side].inventory[i] = allItems[idx]; // Aquí puedes adaptar si necesitas instanciar
         }
     });
-    // Sumar stats de todos los ítems equipados correctamente
     if (typeof champions[side].applyItemsStats === 'function') {
         champions[side].applyItemsStats();
     }
@@ -159,7 +339,26 @@ levelInputs.forEach((input, side) => {
     });
 });
 
-// Inicialización
+function renderItemsByCategory(category) {
+    const itemsListDiv = document.getElementById('items-icons-list');
+    itemsListDiv.innerHTML = '';
+    let filteredItems;
+    if (category === 'all') {
+        filteredItems = allItems;
+    } else {
+        filteredItems = allItems.filter(item => item.tags && item.tags.includes(category));
+    }
+    filteredItems.forEach(item => {
+        const img = document.createElement('img');
+        img.src = item.image;
+        img.alt = item.name;
+        img.className = 'item-icon';
+        img.setAttribute('draggable', 'true');
+        img.setAttribute('data-item', item.name.replace(/\s/g, ''));
+        itemsListDiv.appendChild(img);
+    });
+    setupDragAndDrop();
+}
 
 // Drag & Drop de ítems
 function setupDragAndDrop() {
@@ -189,18 +388,14 @@ function setupDragAndDrop() {
                 e.preventDefault();
                 slot.style.boxShadow = '';
                 const itemName = e.dataTransfer.getData('text/plain');
-                // Buscar el índice del ítem
-                const itemIdx = itemClasses.findIndex(cls => cls.name.replace(/\s/g, '') === itemName.replace(/\s/g, '') || cls.prototype.constructor.name.replace(/\s/g, '') === itemName.replace(/\s/g, ''));
-                // Verificar si el ítem ya está en otro slot
+                const itemIdx = allItems.findIndex(item => item.name.replace(/\s/g, '') === itemName);
                 if (itemIdx !== -1 && !items[side].includes(itemIdx)) {
                     items[side][idx] = itemIdx;
-                    // Mostrar el icono en el slot
-                    slot.innerHTML = `<img src="assets/items/${itemClasses[itemIdx].name.replace(/\s/g, '')}_item.png" alt="${itemClasses[itemIdx].name}" class="item-icon" style="width:40px;height:40px;">`;
+                    slot.innerHTML = `<img src="${allItems[itemIdx].image}" alt="${allItems[itemIdx].name}" class="item-icon" style="width:40px;height:40px;">`;
                     updateChampionItems(side);
                     renderStats(side);
                 }
             });
-            // Permitir quitar el ítem del slot con doble click
             slot.addEventListener('dblclick', () => {
                 items[side][idx] = null;
                 slot.innerHTML = '';
@@ -214,50 +409,24 @@ function setupDragAndDrop() {
     });
 }
 
-// Mostrar/ocultar el bloque de ítems
 document.getElementById('toggle-items').addEventListener('click', () => {
     const iconsBlock = document.getElementById('items-icons');
     iconsBlock.style.display = iconsBlock.style.display === 'none' ? 'block' : 'none';
 });
 
-// Inicializar drag & drop después de cargar el DOM
 window.addEventListener('DOMContentLoaded', () => {
     renderChampionOptions();
     updateChampion(0);
     updateChampion(1);
     renderSkills(0);
     renderSkills(1);
+    // Instanciar todos los ítems manualmente y guardarlos en allItems
+    allItems = itemClasses.map(ItemClass => new ItemClass());
     renderItemsByCategory('all');
     setupCategoryMenu();
     setupDragAndDrop();
-// Renderiza los ítems según la categoría seleccionada
-function renderItemsByCategory(category) {
-    const itemsListDiv = document.getElementById('items-icons-list');
-    itemsListDiv.innerHTML = '';
-    let filteredItems;
-    if (category === 'all') {
-        filteredItems = itemClasses;
-    } else {
-        filteredItems = itemClasses.filter(cls => {
-            const instance = new cls();
-            return instance.tags && instance.tags.includes(category);
-        });
-    }
-    filteredItems.forEach(cls => {
-        const instance = new cls();
-        const itemName = cls.name.replace(/\s/g, '');
-        const img = document.createElement('img');
-        img.src = `assets/items/${itemName}_item.png`;
-        img.alt = itemName;
-        img.className = 'item-icon';
-        img.setAttribute('draggable', 'true');
-        img.setAttribute('data-item', itemName);
-        itemsListDiv.appendChild(img);
-    });
-    setupDragAndDrop();
-}
+});
 
-// Configura el menú de categorías para filtrar ítems
 function setupCategoryMenu() {
     const menu = document.getElementById('items-category-menu');
     if (!menu) return;
@@ -268,10 +437,8 @@ function setupCategoryMenu() {
             renderItemsByCategory(btn.getAttribute('data-category'));
         });
     });
-    // Marca 'Todos' como activo por defecto
     menu.querySelector('.category-btn[data-category="all"]').classList.add('active');
 }
-});
 
 function renderSkills(side) {
     const skillsDiv = document.getElementById(side === 0 ? 'attacker-skills' : 'defender-skills');
@@ -280,25 +447,17 @@ function renderSkills(side) {
     descDiv.innerHTML = '';
     if (!champions[side]) return;
     const champ = champions[side];
-    const skillKeys = [
-        { key: 'P' },
-        { key: 'Q' },
-        { key: 'W' },
-        { key: 'E' },
-        { key: 'R' }
-    ];
-    skillKeys.forEach(({ key }) => {
+    const skillKeys = [ 'P', 'Q', 'W', 'E', 'R' ];
+    skillKeys.forEach(key => {
         // Normalizar nombre del campeón para la ruta
         const champFolder = champ.name.replace(/\s/g, '').replace(/'/g, '').replace(/[^a-zA-Z0-9]/g, '');
         const imgName = `${champFolder}_${key}_ability.png`;
         const imgPath = `assets/champions/${champFolder}/${imgName}`;
-        // Crear elemento de habilidad
-        const skillElem = document.createElement('div');
+        const skillElem = document.createElement('span');
         skillElem.className = 'skill';
         skillElem.innerHTML = `<img src="${imgPath}" alt="${key}" style="width:40px;height:40px;vertical-align:middle;border-radius:8px;">`;
         // Click: mostrar/cerrar descripción
         skillElem.addEventListener('click', () => {
-            // Si ya está abierta esta descripción, ciérrala
             if (descDiv.getAttribute('data-open') === key) {
                 descDiv.innerHTML = '';
                 descDiv.removeAttribute('data-open');
