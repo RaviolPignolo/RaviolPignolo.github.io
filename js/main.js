@@ -348,16 +348,74 @@ function renderItemsByCategory(category) {
     } else {
         filteredItems = allItems.filter(item => item.tags && item.tags.includes(category));
     }
-    filteredItems.forEach(item => {
+    filteredItems.forEach((item, idx) => {
         const img = document.createElement('img');
         img.src = item.image;
         img.alt = item.name;
         img.className = 'item-icon';
         img.setAttribute('draggable', 'true');
         img.setAttribute('data-item', item.name.replace(/\s/g, ''));
+        // Tooltip events
+        img.addEventListener('mouseenter', (e) => {
+            showItemTooltip(item, e);
+        });
+        img.addEventListener('mousemove', (e) => {
+            moveItemTooltip(e);
+        });
+        img.addEventListener('mouseleave', () => {
+            hideItemTooltip();
+        });
         itemsListDiv.appendChild(img);
     });
     setupDragAndDrop();
+// Tooltip logic
+function showItemTooltip(item, event) {
+    const tooltip = document.getElementById('item-tooltip');
+    tooltip.innerHTML = `
+        <div style="background:#181a2a;border-radius:10px;padding:16px;min-width:320px;max-width:400px;box-shadow:0 4px 24px #000;color:#e3e6ed;font-family:sans-serif;">
+            <div style='display:flex;align-items:center;'>
+                <img src='${item.image}' style='width:48px;height:48px;border-radius:8px;margin-right:12px;'>
+                <span style='font-size:1.3em;font-weight:bold;'>${item.name}</span>
+                <span style='margin-left:auto;font-size:1.1em;color:#ffd700;'>${item.cost ?? ''}</span>
+            </div>
+            <div style='margin:8px 0 4px 0;'>
+                ${renderItemStats(item)}
+            </div>
+            <div style='margin:8px 0 0 0;'>
+                <span style='font-weight:bold;color:#7fdfff;'>Passive:</span><br>
+                <span style='font-size:0.98em;'>${item.passive ?? '<i>No passive info</i>'}</span>
+            </div>
+        </div>
+    `;
+    tooltip.style.display = 'block';
+    moveItemTooltip(event);
+}
+
+function moveItemTooltip(event) {
+    const tooltip = document.getElementById('item-tooltip');
+    tooltip.style.left = (event.pageX + 20) + 'px';
+    tooltip.style.top = (event.pageY + 20) + 'px';
+}
+
+function hideItemTooltip() {
+    const tooltip = document.getElementById('item-tooltip');
+    tooltip.style.display = 'none';
+}
+
+function renderItemStats(item) {
+    let stats = [];
+    if (item.ap) stats.push(`<span style='color:#7fdfff;'>Ability Power:</span> +${item.ap}`);
+    if (item.ah) stats.push(`<span style='color:#7fdfff;'>Ability Haste:</span> +${item.ah}`);
+    if (item.ad) stats.push(`<span style='color:#ffd700;'>Attack Damage:</span> +${item.ad}`);
+    if (item.hp) stats.push(`<span style='color:#ff6b6b;'>Health:</span> +${item.hp}`);
+    if (item.mana) stats.push(`<span style='color:#7fdfff;'>Mana:</span> +${item.mana}`);
+    if (item.armor) stats.push(`<span style='color:#b0eaff;'>Armor:</span> +${item.armor}`);
+    if (item.mr) stats.push(`<span style='color:#b0eaff;'>MR:</span> +${item.mr}`);
+    if (item.attack_speed) stats.push(`<span style='color:#ffd700;'>Attack Speed:</span> +${item.attack_speed}`);
+    if (item.lifesteal) stats.push(`<span style='color:#ffb6b6;'>Lifesteal:</span> +${item.lifesteal}`);
+    // Puedes agregar más stats aquí
+    return stats.length ? stats.join(' | ') : '';
+}
 }
 
 // Drag & Drop de ítems
